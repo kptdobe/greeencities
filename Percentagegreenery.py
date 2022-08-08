@@ -32,7 +32,7 @@ no_road = cv2.countNonZero(dst3)
 print(no_road)
 
 Sidewalk = np.array([232, 35,243], np.uint8) 
-Sidewalk1 = np.array([232, 35,234], np.uint8) 
+Sidewalk1 = np.array([232, 35,123], np.uint8) 
 dst4 = cv2.inRange(img, Sidewalk, Sidewalk1)
 no_sidewalk = cv2.countNonZero(dst4)
 
